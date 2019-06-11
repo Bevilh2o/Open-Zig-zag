@@ -3,7 +3,9 @@ guid: 0ce87771c9f423f4891828447c49ae0e
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - highScoreFx: {fileID: 8300000, guid: 6db5d97176d132548ac49218a117e76d, type: 3}
+  - diamondFx: {fileID: 8300000, guid: 109088807b53abf499b5ed8401e5a8eb, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

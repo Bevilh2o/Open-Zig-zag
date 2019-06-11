@@ -1,0 +1,12 @@
+Bug:
+-quando parte il suono dell'high score, viene interroto da quello del diamante nel caso se ne prenda uno. In quel caso, bisogna far sì che i suoni si sovrappongano.
+-La pallina tende a saltare durante il suo percorso
+-Aggiustare la risoluzione sul telefono
+
+Da implementare:
+Achievement
+score board
+Tasto "remove ads"
+Oggetti sbloccabili
+Oggetti acquistabili
+Cambio colore sfondo randomico ogni tot secondi
