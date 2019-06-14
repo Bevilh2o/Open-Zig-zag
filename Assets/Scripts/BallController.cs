@@ -6,10 +6,12 @@ public class BallController : MonoBehaviour
 {
     public GameObject particle;
     [SerializeField] //This is used to display the parameters into Unity.
-    private float speed = 0;
+    private float speed;
     Rigidbody rb;
     bool hasBallStarted = false;
     bool GameOver = false;
+
+    public float Speed { get => speed; set => speed = value; }
 
 
     //Awake is called when the application starts
@@ -31,7 +33,7 @@ public class BallController : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                rb.velocity = new Vector3(speed, 0, 0);
+                rb.velocity = new Vector3(Speed, 0, 0);
                 hasBallStarted = true;
                 PlatformSpawner.current.BeginSpawn();
 
@@ -62,11 +64,11 @@ public class BallController : MonoBehaviour
     {
         if (rb.velocity.z > 0)
         {
-            rb.velocity = new Vector3(speed, 0, 0);
+            rb.velocity = new Vector3(Speed, 0, 0);
         }
         else //if (rb.velocity.x > 0)
         {
-            rb.velocity = new Vector3(0, 0, speed);
+            rb.velocity = new Vector3(0, 0, Speed);
         }
     }
 
